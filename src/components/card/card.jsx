@@ -19,7 +19,7 @@ export default function Card({ item }) {
         </h2>
         <p className="address">
           <img
-            src="/ping.png"
+            src="/pin.png"
             alt=""
           />
           <span>{item.address}</span>
