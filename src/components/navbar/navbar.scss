@@ -49,9 +49,19 @@ nav {
 
   .right {
     flex: 2;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background-color: #fcf5f3;
+
+    @include md {
+      background-color: initial;
+    }
+
+    @include sm {
+      background-color: initial;
+    }
 
     a {
       padding: 12px 24px;

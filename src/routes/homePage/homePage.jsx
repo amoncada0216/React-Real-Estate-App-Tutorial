@@ -1,50 +1,40 @@
+import SearchBar from "../../components/searchBar/SearchBar";
 import "./homePage.scss";
 
-export default function Navbar() {
-  const [open, setOpen] = useState(false);
-
+export default function HomePage() {
   return (
-    <nav>
-      <div className="left">
-        <a
-          className="logo"
-          href=""
-        >
-          <img
-            src="/logo.png"
-            alt=""
-          />
-          <span>LamaEstate</span>
-        </a>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Agents</a>
-      </div>
-      <div className="right">
-        <a href="">Sign In</a>
-        <a
-          className="register"
-          href=""
-        >
-          Sign Up
-        </a>
-        <div className="menuIcon">
-          <img
-            src="/menu.png"
-            alt=""
-            onClick={() => setOpen((prev) => !prev)}
-          />
-        </div>
-        <div className={open ? "menu active" : "menu"}>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
-          <a href="">Agents</a>
-          <a href="">Sign In</a>
-          <a href="">Sign Up</a>
+    <div className="homePage">
+      <div className="textContainer">
+        <div className="wrapper">
+          <h1 className="title">Find Real Estate & Get Your Dream Place</h1>
+          <p>
+            Culpa amet fugiat adipisicing nisi sit in id aute aute id velit.
+            Sint velit cillum adipisicing ad ad sint est qui nulla deserunt
+            minim ipsum. Cillum cupidatat non ullamco tempor.
+          </p>
+          <SearchBar />
+          <div className="boxes">
+            <div className="box">
+              <h1>16+</h1>
+              <h2>Years of Experience</h2>
+            </div>
+            <div className="box">
+              <h1>200</h1>
+              <h2>Awards Gained</h2>
+            </div>
+            <div className="box">
+              <h1>1200+</h1>
+              <h2>Properties Ready</h2>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
+      <div className="imageContainer">
+        <img
+          src="/bg.png"
+          alt=""
+        />
+      </div>
+    </div>
   );
 }
