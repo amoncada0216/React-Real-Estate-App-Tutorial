@@ -3,6 +3,7 @@ import ListPage from "./routes/listPage/listPage";
 import Layout from "./routes/layout/layout";
 import HomePage from "./routes/homePage/homePage";
 import SinglePage from "./routes/singlePage/singlePage";
+import ProfilePage from "./routes/profilePage/profilePage";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -21,6 +22,10 @@ export default function App() {
         {
           path: "/:id",
           element: <SinglePage />,
+        },
+        {
+          path: "/profile",
+          element: <ProfilePage />,
         },
       ],
     },
